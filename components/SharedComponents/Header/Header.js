@@ -1,7 +1,5 @@
-import Head from "next/head";
-
 import Link from "next/link";
-const Header = () => {
+const Header = (props) => {
 	return (
 		<header className="max-h-screen h-screen">
 			<div className="flex flex-col items-center h-screen max-h-screen">
@@ -11,19 +9,29 @@ const Header = () => {
 				<nav className="w-full text-center p-4 flex-nav">
 					<ul className="flex flex-col justify-evenly h-full text-4xl font-bold text-red">
 						<li className="hover:text-red-dark cursor-pointer">
-							HOME
+							<Link href="/Home">
+								<a>HOME</a>
+							</Link>
 						</li>
 						<li className="hover:text-red-dark cursor-pointer">
-							BLOG
+							<Link href="/Blog">
+								<a>BLOG</a>
+							</Link>
 						</li>
 						<li className="hover:text-red-dark cursor-pointer">
-							GALLERY
+							<Link href="/Gallery">
+								<a>GALLERY</a>
+							</Link>
 						</li>
 						<li className="hover:text-red-dark cursor-pointer">
-							VIDEOS
+							<Link href="/Videos">
+								<a>VIDEOS</a>
+							</Link>
 						</li>
 						<li className="hover:text-red-dark cursor-pointer">
-							ABOUT ME
+							<Link href="/About">
+								<a>ABOUT ME</a>
+							</Link>
 						</li>
 					</ul>
 				</nav>
